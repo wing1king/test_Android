@@ -1,6 +1,6 @@
 #coding:utf-8
 from time import *
-import unittest,warnings#忽略警告
+import unittest,warnings  # 忽略警告
 from appium import webdriver
 
 
@@ -17,7 +17,7 @@ class MyTestCase(unittest.TestCase):
         sleep(5)
 
     def test_1(self):
-        self.driver.tap([(370, 390)])
+        self.driver.tap([(370, 390)])  # 通过坐标点击
         sleep(3)
         self.driver.find_element_by_id("bt_start_game").click()
         sleep(5)
